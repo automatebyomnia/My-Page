@@ -30,14 +30,20 @@ body {
 
   color: var(--ink);
 
-  background:
+  /* BACKGROUND IMAGE */
+  background-image:
     linear-gradient(
       90deg,
-      rgba(244,248,252,0.96) 0%,
-      rgba(244,248,252,0.88) 45%,
-      rgba(244,248,252,0.35) 100%
+      rgba(244, 248, 252, 0.94) 0%,
+      rgba(244, 248, 252, 0.82) 42%,
+      rgba(244, 248, 252, 0.35) 100%
     ),
-    url("background.jpeg") center top / cover fixed no-repeat;
+    url("./background.jpeg");
+
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 
   line-height: 1.5;
 }
@@ -59,19 +65,14 @@ img {
 
 header {
   width: min(1200px, 92%);
-
   height: 90px;
-
   margin: auto;
 
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
 
   position: relative;
-
   z-index: 10;
 }
 
@@ -80,15 +81,11 @@ header {
 
 .brand {
   display: flex;
-
   align-items: center;
-
   gap: 10px;
 
   font-family: "Space Grotesk", sans-serif;
-
   font-size: 18px;
-
   font-weight: 700;
 
   white-space: nowrap;
@@ -96,7 +93,6 @@ header {
 
 .brand i {
   color: var(--purple);
-
   font-style: normal;
 }
 
@@ -105,38 +101,32 @@ header {
 
 .automation-icon {
   width: 34px;
-
   height: 34px;
 
   display: grid;
-
   place-items: center;
 
   border-radius: 9px;
 
   background: var(--navy);
-
   color: var(--cyan);
 
   font-size: 19px;
 
   box-shadow:
-    0 0 0 1px rgba(57,201,238,0.2),
-    0 7px 20px rgba(6,19,59,0.2);
+    0 0 0 1px rgba(57, 201, 238, 0.2),
+    0 7px 20px rgba(6, 19, 59, 0.2);
 }
 
 
-/* NAV */
+/* NAVIGATION */
 
 nav {
   display: flex;
-
   align-items: center;
-
   gap: 28px;
 
   font-size: 14px;
-
   font-weight: 600;
 }
 
@@ -155,7 +145,6 @@ nav a:hover {
   display: inline-flex;
 
   align-items: center;
-
   justify-content: center;
 
   padding: 13px 21px;
@@ -163,11 +152,9 @@ nav a:hover {
   border-radius: 9px;
 
   background: var(--purple);
-
   color: white;
 
   font-size: 14px;
-
   font-weight: 700;
 
   transition:
@@ -179,7 +166,7 @@ nav a:hover {
   transform: translateY(-2px);
 
   box-shadow:
-    0 10px 25px rgba(128,85,255,0.3);
+    0 10px 25px rgba(128, 85, 255, 0.3);
 }
 
 
@@ -297,12 +284,12 @@ nav a:hover {
   background:
     radial-gradient(
       circle at 78% 15%,
-      rgba(128,85,255,0.75),
+      rgba(128, 85, 255, 0.75),
       transparent 28%
     ),
     radial-gradient(
       circle at 12% 90%,
-      rgba(57,201,238,0.6),
+      rgba(57, 201, 238, 0.6),
       transparent 33%
     ),
     linear-gradient(
@@ -311,10 +298,10 @@ nav a:hover {
       #0d3b73
     );
 
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 
   box-shadow:
-    0 25px 60px rgba(6,19,59,0.25);
+    0 25px 60px rgba(6, 19, 59, 0.25);
 }
 
 
@@ -322,7 +309,6 @@ nav a:hover {
   position: absolute;
 
   top: 30px;
-
   left: 30px;
 
   color: #bfefff;
@@ -357,12 +343,12 @@ nav a:hover {
 
   border-radius: 13px;
 
-  background: rgba(255,255,255,0.97);
+  background: rgba(255, 255, 255, 0.97);
 
   color: var(--navy);
 
   box-shadow:
-    0 12px 30px rgba(0,0,0,0.22);
+    0 12px 30px rgba(0, 0, 0, 0.22);
 }
 
 .flow-box > span {
@@ -390,21 +376,18 @@ nav a:hover {
 
 .box-one {
   left: 30px;
-
   top: 125px;
 }
 
 
 .box-two {
   right: 30px;
-
   top: 95px;
 }
 
 
 .box-three {
   right: 50px;
-
   bottom: 75px;
 }
 
@@ -418,8 +401,8 @@ nav a:hover {
     linear-gradient(
       90deg,
       transparent,
-      rgba(57,201,238,0.85),
-      rgba(128,85,255,0.85),
+      rgba(57, 201, 238, 0.85),
+      rgba(128, 85, 255, 0.85),
       transparent
     );
 }
@@ -460,7 +443,7 @@ nav a:hover {
 
   gap: 20px;
 
-  background: rgba(6,19,59,0.95);
+  background: rgba(6, 19, 59, 0.95);
 
   color: #d7e7f5;
 
@@ -548,12 +531,12 @@ h2 i {
 
   border-radius: 16px;
 
-  background: rgba(255,255,255,0.92);
+  background: rgba(255, 255, 255, 0.92);
 
-  border: 1px solid rgba(15,54,99,0.12);
+  border: 1px solid rgba(15, 54, 99, 0.12);
 
   box-shadow:
-    0 12px 30px rgba(6,19,59,0.05);
+    0 12px 30px rgba(6, 19, 59, 0.05);
 
   transition:
     transform 0.2s ease,
@@ -565,7 +548,7 @@ h2 i {
   transform: translateY(-5px);
 
   box-shadow:
-    0 18px 40px rgba(6,19,59,0.12);
+    0 18px 40px rgba(6, 19, 59, 0.12);
 }
 
 
@@ -675,7 +658,7 @@ h2 i {
 
   padding: 22px 0;
 
-  border-bottom: 1px solid rgba(6,19,59,0.12);
+  border-bottom: 1px solid rgba(6, 19, 59, 0.12);
 }
 
 
@@ -753,9 +736,9 @@ h2 i {
 
   border-radius: 12px;
 
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
 
-  border: 1px solid rgba(6,19,59,0.1);
+  border: 1px solid rgba(6, 19, 59, 0.1);
 }
 
 
@@ -795,7 +778,7 @@ h2 i {
   background:
     radial-gradient(
       circle at center,
-      rgba(128,85,255,0.3),
+      rgba(128, 85, 255, 0.3),
       transparent 30%
     ),
     linear-gradient(
@@ -827,7 +810,7 @@ h2 i {
     );
 
   box-shadow:
-    0 0 70px rgba(57,201,238,0.6);
+    0 0 70px rgba(57, 201, 238, 0.6);
 }
 
 
@@ -841,7 +824,7 @@ h2 i {
 .orbit {
   position: absolute;
 
-  border: 1px solid rgba(57,201,238,0.3);
+  border: 1px solid rgba(57, 201, 238, 0.3);
 
   border-radius: 50%;
 }
@@ -872,7 +855,7 @@ h2 i {
 
   border-radius: 9px;
 
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
 
   color: var(--navy);
 
@@ -881,27 +864,24 @@ h2 i {
   font-weight: 700;
 
   box-shadow:
-    0 10px 25px rgba(0,0,0,0.2);
+    0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 
 .card-a {
   top: 70px;
-
   left: 55px;
 }
 
 
 .card-b {
   top: 115px;
-
   right: 45px;
 }
 
 
 .card-c {
   bottom: 70px;
-
   left: 90px;
 }
 
@@ -927,8 +907,8 @@ h2 i {
   background:
     linear-gradient(
       135deg,
-      rgba(225,239,255,0.96),
-      rgba(237,232,255,0.96)
+      rgba(225, 239, 255, 0.96),
+      rgba(237, 232, 255, 0.96)
     );
 }
 
@@ -993,7 +973,7 @@ li strong {
   color: white;
 
   box-shadow:
-    0 20px 45px rgba(6,19,59,0.18);
+    0 20px 45px rgba(6, 19, 59, 0.18);
 }
 
 
@@ -1047,9 +1027,9 @@ li strong {
 
   border-radius: 15px;
 
-  background: rgba(255,255,255,0.9);
+  background: rgba(255, 255, 255, 0.9);
 
-  border: 1px solid rgba(6,19,59,0.1);
+  border: 1px solid rgba(6, 19, 59, 0.1);
 }
 
 
@@ -1096,8 +1076,8 @@ li strong {
   background:
     linear-gradient(
       135deg,
-      rgba(6,19,59,0.98),
-      rgba(10,47,91,0.98)
+      rgba(6, 19, 59, 0.98),
+      rgba(10, 47, 91, 0.98)
     );
 
   color: white;
@@ -1272,12 +1252,18 @@ footer .brand {
 @media (max-width: 650px) {
 
   body {
-    background:
+
+    background-image:
       linear-gradient(
-        rgba(244,248,252,0.95),
-        rgba(244,248,252,0.95)
+        rgba(244, 248, 252, 0.90),
+        rgba(244, 248, 252, 0.90)
       ),
-      url("background.jpeg") center top / cover fixed no-repeat;
+      url("./background.jpeg");
+
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 
 
@@ -1287,6 +1273,11 @@ footer .brand {
 
 
   header nav {
+    display: none;
+  }
+
+
+  header > .button {
     display: none;
   }
 
